@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #111827, #1e3a8a);
+  color: #fff;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 480px;
+}
+
+.card {
+  background: rgba(17, 24, 39, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #9ca3af;
+  margin-bottom: 25px;
+}
+
+.password-box {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 25px;
+}
+
+.password-box input {
+  flex: 1;
+  min-width: 0;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background: #374151;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+}
+
+.password-box button {
+  width: 52px;
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.password-box button:hover {
+  background: #1d4ed8;
+}
+
+.settings {
+  margin-bottom: 25px;
+}
+
+.length-header,
+.strength-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+#lengthValue {
+  color: #60a5fa;
+  font-weight: bold;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin-bottom: 20px;
+  accent-color: #3b82f6;
+}
+
+.option {
+  display: block;
+  padding: 9px 0;
+  color: #d1d5db;
+  cursor: pointer;
+}
+
+.option input {
+  margin-right: 8px;
+  accent-color: #3b82f6;
+}
+
+.strength {
+  margin-bottom: 25px;
+}
+
+.strength-title {
+  color: #d1d5db;
+  font-size: 14px;
+}
+
+#strengthText {
+  font-weight: bold;
+}
+
+.strength-bar {
+  width: 100%;
+  height: 8px;
+  background: #374151;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#strengthFill {
+  height: 100%;
+  width: 0%;
+  transition: 0.3s;
+}
+
+.generate {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.generate:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+#message {
+  text-align: center;
+  margin-top: 15px;
+  color: #4ade80;
+  min-height: 20px;
+}
+
+@media (max-width: 500px) {
+  .card {
+    padding: 22px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
